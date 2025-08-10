@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        body{
+            align-content: center;
+        }
+        .box{
+          height:450px ;
+          width: 670px;
+          display: grid;
+          grid-template-columns: auto auto auto;
+          gap: 15px;
+          background-color: rgb(103, 135, 166);
+          padding: 10px;
+          align-content: center;
+        }
+        img{
+            /* background-color: #f1f1f1; */
+            text-align: center;
+            padding: 5px;
+            /* font-size: 30px; */
+            height: 200px;
+            width: 200px;
+        }
+        @media (max-width: 600px) {
+      .box {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        background-color: bisque;
+        gap: 5px;
+        height: auto;
+        width: 460px;
+      }
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <img src="../HTML/tree-with-green-leaves-vector-whitebackground_1020392-513.avif" alt="Image 1">
+    <img src="fruit.jpeg" alt="Image 2">
+    <img src="car.jpeg" alt="Image 3">
+    <img src="tom and jerry.jpeg" alt="Image 4">
+    <img src="flower.jpeg" alt="Image 5">
+    <img src="home.jpeg" alt="Image 6">
+  </div>
+</body>
+</html>

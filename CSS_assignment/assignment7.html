@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Button</title>
+    <style>
+        .box{
+            height: 200px;
+            width: auto;
+            display: flex;
+            background-color: rgba(194, 192, 138, 0.673);
+            align-items: center;
+            flex-wrap: nowrap;
+            gap: 30px;
+            justify-content: space-evenly;
+             margin-top: 18%;
+        }
+        button{
+            width: 200px;
+            height: 90px;
+            background-color: rgb(173, 214, 159);
+            font-size: 25px;
+            /* margin: 90px; */
+            border-radius: 15%;
+            padding: 10px;
+            box-shadow: 5px 5px 4px rgb(51, 51, 51);
+            transition: 3s;
+        }
+        button:hover{
+            background-color: rgba(115, 84, 138, 0.819);
+            color: aliceblue;
+        }
+        #bs:hover{
+            background-color: rgb(59, 80, 81);
+            color: aliceblue;
+        }
+        #bd:hover{
+            background-color: rgb(33, 90, 52);
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <button>Primary</button>
+        <button id="bs">Secondary</button>
+        <button id="bd">danger</button>
+    </div>
+</body>
+</html>

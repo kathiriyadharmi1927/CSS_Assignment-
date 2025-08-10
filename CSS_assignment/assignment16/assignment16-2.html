@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--link the css file using link tag-->
+    <style>
+        /* *{
+            border: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Lato", sans-serif;
+        } */
+
+        body {
+            background: linear-gradient(to left, rgb(238, 91, 91), rgb(8, 8, 44));
+        }
+
+        .container {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 250px;
+            position: fixed;
+            background-color: #19191a;
+
+            overflow: auto;
+        }
+
+        /*adding styles to links */
+        .container a {
+            text-decoration: none;
+            display: block;
+            padding: 18px;
+            color: #fff
+        }
+
+        .container a.active {
+            background-color: #14a093;
+        }
+
+        a:hover {
+            background-color: #403b3b;
+        }
+
+        div.content {
+            margin-left: 230px;
+            padding: 40px 40px;
+            height: 100vh;
+            color: rgb(237, 228, 228);
+        }
+
+        @media screen and (max-width:500px) {
+            .container {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .container a {
+                float: left;
+            }
+
+            div.content {
+                margin-left: 0;
+                background-color: rgb(110, 110, 34);
+            }
+        }
+
+        @media screen and (max-width:300px) {
+            .container a {
+                text-align: center;
+                float: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!--container class will contain the links-->
+        <a href="#" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Feedback</a>
+    </div>
+    <div class="content">
+        <!--write the content you want inside.-->
+        <h1>Bhavnagar</h1>
+        <p>Bhavnagar is a city and the headquarters of Bhavnagar district in the Indian state of Gujarat. It was founded
+            in 1723 by Bhavsinhji Gohil. It was the capital of Bhavnagar State, which was a princely state before it was
+            merged into the Indian Union in February 1948. <br><br>
+
+            Bhavnagar is situated 190 kilometres away from the state capital Gandhinagar and to the west of the Gulf of
+            Khambhat. It has always been an important city for trade with many large and small scale industries along
+            with the world's largest ship breaking yard, Alang which is located 50 kilometres away. Bhavnagar is also
+            famous for its version of the popular Gujarati snack 'Ganthiya' and 'Jalebi'.</p>
+    </div>
+</body>
+
+</html>
